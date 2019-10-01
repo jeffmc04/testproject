@@ -10,6 +10,7 @@ jeff another change on master
 change 3
 change 4
 
+and here is my feature
 hi
 
 more changes from someone on master go here
