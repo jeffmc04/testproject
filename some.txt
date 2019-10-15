@@ -14,6 +14,8 @@ jeff here is a change on master
 
 and here is my feature
 jeff another change on master
+change 3
+change 4
 
 hi
 
