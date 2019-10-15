@@ -6,6 +6,8 @@ change 1 from master
 
 jeff here is a change on master
 
+jeff another change on master
+
 hi
 
 more changes from someone on master go here
