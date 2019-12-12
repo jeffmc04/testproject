@@ -158,9 +158,10 @@ please see the [Extending the Scorecard with Plugins](#extending-the-scorecard-w
 
 Following the description of each internal [Plugin](#plugins). Note that are 8 internal tests across 2 internal plugins that the scorecard can run. If multiple CRs are specified for a plugin, the test environment is fully cleaned up after each CR so each CR gets a clean testing environment.
 
-Each test has a `short name` that uniquely identifies the test.  This is useful for selecting a specific test to run as follows:
+Each test has a `short name` that uniquely identifies the test.  This is useful for selecting a specific test or tests to run as follows:
 ```sh
 operator-sdk scorecard -o text --selector=test=specblockexists
+operator-sdk scorecard -o text --selector='test in (crdvalidationsection,writeintocr)'
 ```
 
 ### Basic Operator
