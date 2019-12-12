@@ -166,7 +166,7 @@ operator-sdk scorecard -o text --selector=test=specblockexists
 ### Basic Operator
 
 | Test        | Description   | Short Name |
-| --------    | -------- |
+| --------    | -------- | -------- |
 | Spec Block Exists | This test checks the Custom Resource(s) created in the cluster to make sure that all CRs have a spec block. This test has a maximum score of 1 | specblockexists |
 | Status Block Exists | This test checks the Custom Resource(s) created in the cluster to make sure that all CRs have a status block. This test has a maximum score of 1 | statusblockexists |
 | Writing Into CRs Has An Effect | This test reads the scorecard proxy's logs to verify that the operator is making `PUT` and/or `POST` requests to the API server, indicating that it is modifying resources. This test has a maximum score of 1 | writeintocr |
@@ -174,7 +174,7 @@ operator-sdk scorecard -o text --selector=test=specblockexists
 ### OLM Integration
 
 | Test        | Description   | Short Name |
-| --------    | -------- |
+| --------    | -------- | -------- |
 | OLM Bundle Validation | This test validates the OLM bundle manifests found in the bundle directory as specifed by the bundle flag.  If the bundle contents contain errors, then the test result output will include the validator log as well as error messages from the validation library.  See this [document][olm-bundle] for details on OLM bundles.| bundlevalidation |
 | Provided APIs have validation |This test verifies that the CRDs for the provided CRs contain a validation section and that there is validation for each spec and status field detected in the CR. This test has a maximum score equal to the number of CRs provided via the `cr-manifest` option. | crdvalidationsection |
 | Owned CRDs Have Resources Listed | This test makes sure that the CRDs for each CR provided via the `cr-manifest` option have a `resources` subsection in the [`owned` CRDs section][owned-crds] of the CSV. If the test detects used resources that are not listed in the resources section, it will list them in the suggestions at the end of the test. This test has a maximum score equal to the number of CRs provided via the `cr-manifest` option. | crdhasresources |
