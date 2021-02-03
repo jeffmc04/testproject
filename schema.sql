@@ -4,7 +4,7 @@ jj--
 
 -- Dumped from database version 9.5.3
 -- Dumped by pg_dump version 9.5.3
-
+test
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET client_encoding = 'SQL_ASCII';
